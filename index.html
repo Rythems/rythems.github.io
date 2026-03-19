@@ -76,7 +76,7 @@
     .skill-tag { font-family: 'DM Mono', monospace; font-size: 0.72rem; color: var(--text); background: var(--surface); border: 1px solid var(--border); padding: 0.3rem 0.75rem; transition: border-color 0.2s, color 0.2s; }
     .skill-tag:hover { border-color: var(--accent2); color: var(--accent2); }
  
-    .projects-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(340px, 1fr)); gap: 1.5rem; }
+    .projects-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; }
     .project-card { background: var(--surface); border: 1px solid var(--border); padding: 2rem; display: flex; flex-direction: column; gap: 1rem; transition: border-color 0.25s, transform 0.25s; }
     .project-card:hover { border-color: var(--accent); transform: translateY(-3px); }
     .project-top { display: flex; justify-content: space-between; align-items: flex-start; }
@@ -132,7 +132,7 @@
       #hero { padding: 8rem 1.5rem 4rem; } .hero-social { display: none; }
       section { padding: 4rem 1.5rem; } #skills, #certifications { padding: 4rem 1.5rem; }
       .about-grid, .contact-wrapper { grid-template-columns: 1fr; gap: 2.5rem; }
-      .projects-grid, .certs-grid { grid-template-columns: 1fr; }
+      .projects-grid { grid-template-columns: repeat(2, 1fr); } .certs-grid { grid-template-columns: 1fr; }
       .edu-card { flex-direction: column; gap: 0.5rem; }
     }
   </style>
@@ -160,7 +160,7 @@
       <div class="hero-meta">
         <div class="hero-meta-item"><span>📍</span> Hyderabad, India</div>
         <div class="hero-meta-item"><span>🎓</span> B.Tech CSE — 2023–2027</div>
-        <div class="hero-meta-item"><span>✉</span> adarshpandey28official@gmail.com</div>
+        <div class="hero-meta-item"><span>✉</span> <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="91f0f5f0e3e2f9e1f0fff5f4e8a3a9fef7f7f8f2f8f0fdd1f6fcf0f8fdbff2fefc">[email&#160;protected]</a></div>
       </div>
       <div class="hero-cta">
         <a href="#projects" class="btn-primary">View Projects →</a>
@@ -237,12 +237,17 @@
   <section id="projects">
     <div class="section-header"><span class="section-num">04</span><h2 class="section-title">Projects</h2></div>
     <div class="projects-grid">
+      <div class="project-card"><div class="project-top"><span class="project-icon">🚚</span><div class="project-links"></div></div><div class="project-name">Logistics Shipment Tracker</div><ul class="project-bullets"><li>Secure internal portal for logging shipment IDs and revenue with real-time sync to Google Sheets</li><li>Replaced manual tracking — reduced errors, improved data accuracy and real-time operational visibility</li><li>Fully responsive across mobile, tablet and desktop with confirmation flow and auto logout</li></ul><div class="project-techs"><span class="project-tech">HTML</span><span class="project-tech">CSS</span><span class="project-tech">JavaScript</span><span class="project-tech">Google Sheets API</span></div></div>
       <div class="project-card"><div class="project-top"><span class="project-icon">🔤</span><div class="project-links"><a href="https://github.com/rythems" target="_blank" class="project-link">GitHub ↗</a></div></div><div class="project-name">Intelligent Text Correction</div><ul class="project-bullets"><li>Real-time grammatical and spelling error detection via an interactive HTML interface</li><li>Clean UI and documentation transferable to client-facing software development</li></ul><div class="project-techs"><span class="project-tech">NLP</span><span class="project-tech">Python</span><span class="project-tech">HTML</span></div></div>
       <div class="project-card"><div class="project-top"><span class="project-icon">📧</span><div class="project-links"><a href="https://github.com/rythems" target="_blank" class="project-link">GitHub ↗</a></div></div><div class="project-name">Spam Email Classifier</div><ul class="project-bullets"><li>ML model using Naive Bayes & TF-IDF vectorization with scikit-learn and pandas</li><li>Structured reports communicating technical results to non-technical stakeholders</li></ul><div class="project-techs"><span class="project-tech">Python</span><span class="project-tech">Naive Bayes</span><span class="project-tech">TF-IDF</span><span class="project-tech">scikit-learn</span></div></div>
       <div class="project-card"><div class="project-top"><span class="project-icon">🗄️</span><div class="project-links"><a href="https://github.com/rythems" target="_blank" class="project-link">GitHub ↗</a></div></div><div class="project-name">Student Database System</div><ul class="project-bullets"><li>Tkinter + SQLite desktop app with full CRUD — functionally similar to lightweight CRM/ERP</li><li>Independently scoped, designed, and shipped end-to-end</li></ul><div class="project-techs"><span class="project-tech">Python</span><span class="project-tech">SQLite</span><span class="project-tech">Tkinter</span></div></div>
       <div class="project-card"><div class="project-top"><span class="project-icon">📊</span><div class="project-links"></div></div><div class="project-name">Sales Data Analysis Dashboard</div><ul class="project-bullets"><li>End-to-end analysis — data cleaning, pivot tables, VLOOKUP, and chart visualizations</li><li>Actionable insights reports for business decision-making</li></ul><div class="project-techs"><span class="project-tech">Python</span><span class="project-tech">pandas</span><span class="project-tech">MS Excel</span></div></div>
       <div class="project-card"><div class="project-top"><span class="project-icon">🤖</span><div class="project-links"></div></div><div class="project-name">AI-Assisted Deliverable Generation</div><ul class="project-bullets"><li>Pitch decks, proposals, CRM entries, meeting notes, and reports via AI workflows</li><li>Polished, client-ready documents delivered independently without supervision</li></ul><div class="project-techs"><span class="project-tech">Generative AI</span><span class="project-tech">Productivity</span><span class="project-tech">Automation</span></div></div>
-      <div class="project-card"><div class="project-top"><span class="project-icon">⚡</span><div class="project-links"></div></div><div class="project-name">Genovative Hackathon 2024</div><ul class="project-bullets"><li>Team-built innovative tech solution under rapid prototyping constraints</li><li>Hands-on experience in collaborative problem-solving and presenting to judges</li></ul><div class="project-techs"><span class="project-tech">Hackathon</span><span class="project-tech">Teamwork</span><span class="project-tech">Prototyping</span></div></div>
+ 
+    </div>
+    <br/><br/>
+    <div class="project-card"><div class="project-top"><span class="project-icon">⚡</span><div class="project-links"></div></div><div class="project-name">Genovative Hackathon 2024</div><ul class="project-bullets"><li>Team-built innovative tech solution under rapid prototyping constraints</li><li>Hands-on experience in collaborative problem-solving and presenting to judges</li></ul><div class="project-techs"><span class="project-tech">Hackathon</span><span class="project-tech">Teamwork</span><span class="project-tech">Prototyping</span></div></div>
+      
     </div>
     <br/><br/>
     <div style="text-align:center;"><a href="https://github.com/rythems" target="_blank" class="btn-secondary">View All on GitHub ↗</a></div>
@@ -271,7 +276,7 @@
         <h3>Let's Work Together</h3>
         <p>I'm actively looking for remote internship opportunities in software development or data analytics. I'm responsive, async-friendly, and ready to contribute from day one.</p>
         <div class="contact-items">
-          <a href="mailto:adarshpandey28official@gmail.com" class="contact-item"><div class="contact-item-icon">@</div><div><div class="contact-item-label">Email</div><div class="contact-item-value">adarshpandey28official@gmail.com</div></div></a>
+          <a href="/cdn-cgi/l/email-protection#2544414457564d55444b41405c171d4a43434c464c4449654248444c490b464a48" class="contact-item"><div class="contact-item-icon">@</div><div><div class="contact-item-label">Email</div><div class="contact-item-value"><span class="__cf_email__" data-cfemail="2d4c494c5f5e455d4c434948541f15424b4b444e444c416d4a404c4441034e4240">[email&#160;protected]</span></div></div></a>
           <a href="https://linkedin.com/in/adarsh-pandey-800b28224" target="_blank" class="contact-item"><div class="contact-item-icon">in</div><div><div class="contact-item-label">LinkedIn</div><div class="contact-item-value">adarsh-pandey-800b28224</div></div></a>
           <a href="https://github.com/rythems" target="_blank" class="contact-item"><div class="contact-item-icon">gh</div><div><div class="contact-item-label">GitHub</div><div class="contact-item-value">github.com/rythems</div></div></a>
         </div>
@@ -290,17 +295,6 @@
     <p>© 2026 <span>Adarsh Pandey</span> · Software Developer · Hyderabad, India</p>
   </footer>
  
-  <script>
+  <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
     const navLinks = document.querySelectorAll('.nav-links a');
-    window.addEventListener('scroll', () => {
-      let current = '';
-      document.querySelectorAll('section, #hero, #skills, #certifications').forEach(sec => {
-        if (window.scrollY >= sec.offsetTop - 200) current = sec.id;
-      });
-      navLinks.forEach(link => {
-        link.style.color = link.getAttribute('href') === '#' + current ? 'var(--accent)' : '';
-      });
-    });
-  </script>
-</body>
-</html>
+    window.a
